@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Billy/Universidad/UTEC/2do_CICLO/POO/PROYECTO_1/Funciones.cpp
+Funciones.h
+E:/Billy/Universidad/UTEC/2do_CICLO/POO/PROYECTO_1/Funciones.h
+cmath
+-
+iostream
+-
+iomanip
+-
+
+E:/Billy/Universidad/UTEC/2do_CICLO/POO/PROYECTO_1/Funciones.h
+
