@@ -141,3 +141,14 @@ void MoverPieza(int **&A) {
             break;
     }
 }
+
+int ComprobarMatrix(int **A,int nivel_col)
+{
+    int cont=0;
+    for(int i=0;i<nivel_col;i++)
+        for(int r=0;r<nivel_col;r++)
+            if(A[i][r]==1)
+                cont++;
+    return cont;
+}
+
