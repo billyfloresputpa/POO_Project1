@@ -13,4 +13,5 @@ int** MatrizInternaFrances(int nivel_col);
 void Imprimir(int **A, int nivel_col);
 void MoverPieza(int **&A);
 int ComprobarMatrix(int **A,int nivel_col);
+int ComprobarMatrixPerder(int **A,int nivel_col);
 #endif
