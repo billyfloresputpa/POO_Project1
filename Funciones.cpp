@@ -172,17 +172,13 @@ int ComprobarMatrix(int **A,int nivel_col)
 
 int ComprobarMatrixPerder(int **A,int nivel_col)
 {
-    int cont1=0;
-    for(int i=0;i<nivel_col;i++)
-        for(int r=0;i<nivel_col;r++)
+    for(int i=0;i<nivel_col;i++) {
+        for (int r = 0; r < nivel_col; r++)
         {
             if(A[i][r]==1){
-                if(((A[i-1][r]==1)||(A[i][r-1]==1)||(A[i][r+1]==1)||(A[i+1][r]==1)))
-                {
-                    cont1++;
-                }
-            }
+                if(A[i][r+1]==1||A[i+1][r]==1||A[i-1][r]==1||A[i][r-1]==1) {
+                    return 1;
+            }}}
         }
-
-    return cont1;
-}
+    return 0;
+    }
