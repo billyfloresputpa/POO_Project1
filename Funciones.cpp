@@ -114,18 +114,19 @@ void MoverPieza(int **&A) {
 
     switch (mov) {
         case 1:
-            if (A[fila][col+2] == 0)
+            if (A[fila][col+2] == 0){
                 if (A[fila][col+1] == 1)
                     if(A[fila][col]==1) {
                         A[fila][col + 2] = 1;
                         A[fila][col + 1] = 0;
                         A[fila][col] = 0;
                     }
+            }
             else
-                cout<<"No puede realizar este movimiento";
+                cout<<"No puede realizar este movimiento"<<"\n";
             break;
         case 2:
-            if (A[fila][col-2] == 0)
+            if (A[fila][col-2] == 0){
                 if (A[fila][col] == 1) {
                     if (A[fila][col] == 1) {
                         A[fila][col - 2] = 1;
@@ -133,9 +134,10 @@ void MoverPieza(int **&A) {
                         A[fila][col - 1] = 0;
                     }
                 }
-                else
-                    cout<<"No puede realizar este movimiento";
-                break;
+            }
+            else
+                cout<<"No puede realizar este movimiento"<<"\n";
+            break;
 
         case 3:
             if (A[fila][col] == 1){
@@ -145,19 +147,20 @@ void MoverPieza(int **&A) {
                         A[fila][col]=0;
                         A[fila-2][col]=1;}}}
             else
-                cout<<"No puede realizar este movimiento";
+                cout<<"No puede realizar este movimiento"<<"\n";
             break;
         case 4:
-            if (A[fila+2][col] == 0)
+            if (A[fila+2][col] == 0){
                 if (A[fila+1][col]==1){
                     if (A[fila][col] == 1) {
                         A[fila + 2][col] = 1;
                         A[fila][col] = 0;
                         A[fila + 1][col] = 0;
+                    }
                 }
             }
             else
-                cout<<"No puede realizar este movimiento";
+                cout<<"No puede realizar este movimiento"<<"\n";
             break;
     }
 }
