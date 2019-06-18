@@ -99,7 +99,9 @@ void Imprimir(int **A,int nivel_col){
     for(int f=0;f<nivel_col;f++)
     {cout<<f<<"   ";
         for(int c=0;c<nivel_col;c++)
-        cout<<setw(4)<<A[f][c];
+            if(A[f][c]!=8){
+        cout<<setw(4)<<A[f][c];}
+            else cout<<setw(4)<<" ";
         cout<<"\n";
     }
 }
